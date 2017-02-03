@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sistema de Controle</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="fundo">
+  <!-- Comentários -->
+    <div class="wrapper">
+      <h1> Confirmação</h1>
+      <p class="branco">Sistema Web<br>Aluno: Carlos Niquini <br> Matrícula: 12.2.8346</p>
+    </div>
+
+    <div class="wrapper">
+      <br><br>
+      <h2>Aluno Cadastrado</h2>
+      <p><b>Nome: </b> <span id="nome" ></span></p>
+      <p><b>Matrícula: </b><span id="matricula"></span></p>
+      <p>&nbsp;</p>
+      <br>
+      Assinatura: _______________________________________________
+      <script language="JavaScript">
+	     function addComment(){
+         var parameters = location.search.substring(1).split("&");
+         var temp = parameters[0].split("=");
+         l = unescape(temp[1]);
+         temp = parameters[1].split("=");
+         c = unescape(temp[1]);
+         document.getElementById("nome").innerHTML = l;
+         document.getElementById("matricula").innerHTML = c;
+       }
+       addComment();
+       </script>
+
+
+
+      <br><br>
+      <a href="cadastro.html" class="button button2 button_25">Voltar</a>
+      <a href="lista.html" class="button button2 button_25">Confirmar</a>
+    </div>
+  </body>
+</html>

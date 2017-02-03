@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastramento</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body class="fundo">
+  <!-- Coment�rios -->
+  <div class="wrapper">
+    <h1> Cadastro</h1>
+    <p class="branco">Sistema Web<br>Aluno: Carlos Niquini <br> Matrícula: 12.2.8346</p>
+  </div>
+  <br>
+  <div class="wrapper">
+    <form name="cadastro" method="get" action="confirma_.html" target="_parent">
+
+      <input type="text" id="nome" name="nome" placeholder="Nome">
+      <input class="menor" type="text" id="matricula" name="matricula" placeholder="Matrícula">
+
+
+      <h3>Gênero:</h3>
+      <input type="radio" name="genero" value="F">Feminino
+      <input type="radio" name="genero" value="M">Masculino<br>
+
+      <h3>Área de Interesse:</h3>
+      <div class="rightLeft">
+      <ul class="checkbox-grid">
+      <li><input type="checkbox" name="area" value="value1" /><label for="text1">Banco de Dados</label></li>
+      <li><input type="checkbox" name="area" value="value2" /><label for="text2">Redes</label></li>
+      <li><input type="checkbox" name="area" value="value3" /><label for="text3">Sistemas Web</label></li>
+      <li><input type="checkbox" name="area" value="value4" /><label for="text4">Eng. de Software</label></li>
+      <li><input type="checkbox" name="area" value="value5" /><label for="text5">Linguagens</label></li>
+      <li><input type="checkbox" name="area" value="value6" /><label for="text6">Compiladores</label></li>
+      <li><input type="checkbox" name="area" value="value7" /><label for="text7">Fundamentos</label></li>
+      <li><input type="checkbox" name="area" value="value8" /><label for="text8">Computação Gráfica</label></li>
+      </ul>
+      </div>
+      <br>
+      <br>
+      <h3>Endereço:</h3>
+      <input class="comum"type="text" name="rua" placeholder="Rua" />
+      <input class="menor" type="text" name="num" placeholder="Número" />
+      <input class="maior" type="text" name="num" placeholder="Complemento" />
+
+      <select name="cidade">
+        <option value="" disabled selected>Cidade</option>
+        <option value="1">João Monlevade</option>
+        <option value="2">Mariana</option>
+        <option value="3">Ouro Preto</option>
+        <option value="4">Ponte Nova</option>
+        <option value="5">Belo Horizonte</option>
+      </select></li>
+      <select name="estado">
+        <option value="" disabled selected>Estado</option>
+        <option value="1">MG</option>
+        <option value="2">ES</option>
+        <option value="3">RJ</option>
+        <option value="4">SP</option>
+      </select>
+      <input class="maior" type="text" name="cep" placeholder="CEP" /><br>
+      <h3>Contato:</h3>
+      <input class="metade" type="text" name="tel" placeholder="Telefone" />
+      <input class="metade" type="text" name="cel" placeholder="Celular" /><br>
+      <input class="metade" type="text" name="email" placeholder="Email" />
+      <input class="metade" type="text" name="cpf" placeholder="CPF" />
+      <br><br><br>
+      <h3>Usuário e Senha:</h3>
+      <input class="metade" type="text" name="usuario" placeholder="Usuário" />
+      <input class="metade" type="password" name="senha" placeholder="Senha" />
+      <br><br><br>
+
+      <a href="menu.html" class="button button2 button_25">Voltar</a>
+      <input class="button button2 button_25 buttonRed" type="reset" value="Limpar" />
+      <input class="button button2 button_25" type="submit" value="Cadastrar" />
+    </form>
+  </div>
+  <br>
+
+  </body>
+</html>

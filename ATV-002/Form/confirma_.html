@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Confirmação</title>
+    <link rel="stylesheet" type="text/css" href="Bootstrap.css" />
+  </head>
+
+  <body>
+  <!-- Comentários -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Confirmação</h1>
+      <p class="text-center">Sistema Web<br>Aluno: Carlos Niquini <br> Matrícula: 12.2.8346</p>
+    </div>
+  </section>
+
+    <div class="container text-center">
+      <br><br>
+      <h3>Aluno Cadastrado</h3>
+      <p><b>Nome: </b> <span id="nome" ></span></p>
+      <p><b>Matrícula: </b><span id="matricula"></span></p>
+      <p>&nbsp;</p>
+      <br>
+      Assinatura: _______________________________________________
+      <script language="JavaScript">
+	     function addComment(){
+         var parameters = location.search.substring(1).split("&");
+         var temp = parameters[0].split("=");
+         l = unescape(temp[1]);
+         temp = parameters[1].split("=");
+         c = unescape(temp[1]);
+         document.getElementById("nome").innerHTML = l;
+         document.getElementById("matricula").innerHTML = c;
+       }
+       addComment();
+       </script>
+
+
+
+      <br><br>
+      <a class="btn btn-warning" href="cadastro.html">Voltar</a>
+      <a class="btn btn-success" href="lista.html">Confirmar</a>
+    </div>
+  </body>
+</html>
